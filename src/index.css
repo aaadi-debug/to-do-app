@@ -1,13 +1,115 @@
-body {
+ @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-div {
+  background: rgb(47, 221, 163);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+.child-div {
+  width: 30%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+img {
+  height: 120px;
+  background: rgba(255,255,255, 0.8);
+  border-radius: 10px;
+}
+figcaption {
+  font-size: 1.2rem;
+  font-weight: 1000;
+}
+
+.addItems {
+  margin-top: 20px;
+}
+.addItems input {
+  height: 35px;
+  width: 80%;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.addItems .add-btn {
+  margin-left: -30px;
+}
+.addItems .add-btn:hover {
+  cursor: pointer;
+  color: rgb(47, 221, 163);
+}
+.add-btn:hover {
+  color: rgb(47, 221, 163);
+}
+.todo-btn {
+  display: flex;
+}
+
+.showItems {
+  margin-top: 20px;
+}
+.showItems h3 {
+  align-items: center;
+  display: flex;
+  margin: 5px 10px;
+}
+.showItems i {
+  align-items: center;
+  display: flex;
+  margin: 5px 10px;
+}
+.showItems i:hover {
+  cursor: pointer;
+}
+.eachItems {
+  margin-top: 5px;
+  margin-left: 48px;
+  justify-content: space-between;
+  color: #fff;
+  display: flex;
+  background: rgb(128, 130, 253);
+  height: 35px;
+  width: 80%;
+  border-radius: 6px;
+}
+.eachItems:hover {
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+.btn {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 0.6rem 1.6rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.btn:hover {
+  background: #fff;
+  cursor: pointer;
+  transform: translateY(-4px);
+}
+
+@media(max-width: 768px) {
+
 }
